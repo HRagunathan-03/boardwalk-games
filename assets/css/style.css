@@ -93,6 +93,13 @@ h2 {
     margin-bottom: 1.5rem;
 }
 
+/* Events */
+#events h6 {
+    background-color: var(--highlight-color);
+    color: white;
+    font-weight: bold;
+}
+
 /* Game library cards */
 
 #new-games .card,
