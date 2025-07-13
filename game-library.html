@@ -228,58 +228,60 @@
         </section>
 
         <!-- Reservation form section -->
-        <section id="reserve" class="container section">
+        <section id="reserve" class="container section mb-5">
             <div class="row justify-content-center">
-                <div class="col-12 text-center">
-                    <h2 class="display-6">Reserve a game</h2>
-                </div>
-                <div class="col-12 col-md-8 text-right">
+                <div class="col-12 col-md-8">
+                    <h2 class="display-6 text-center">Reserve a game</h2>
                     <p class="my-4">
-                        Thank you for choosing to reserve a spot at Boardwalk Games! Please
-                        fill out the form below with your details and preferred event. A
-                        member of our team will call you back as soon as possible to confirm
-                        your booking and answer any questions you may have.
+                        Reserve a board game for your next visit to Boardwalk Games. Pick
+                        your challenge, and let the adventure begin! Fill out your details
+                        and preferred game below, and we'll have it set aside for you when
+                        you arrive.
                     </p>
                 </div>
 
-                <div class="col-12 col-md-8 justify-content-center">
-                    <form action="success.html" method="GET">
-                        <div class="row">
-                            <div class="col-12 col-lg-6 mb-3">
-                                <label for="full-name" class="form-label">Full Name</label>
-                                <input class="form-control" id="full-name" name="full-name" type="text" required>
-                            </div>
-                            <div class="col-12 col-lg-6 mb-3">
-                                <label for="email-address" class="form-label">Email Address</label>
-                                <input class="form-control" id="email-address" name="email-address" type="email" required>
-                            </div>
-                            <div class="col-12 col-lg-6 mb-3">
-                                <label for="phone" class="form-label">Phone number</label>
-                                <input class="form-control" id="phone" name="phone" type="number" required>
-                            </div>
-                            <div class="col-12 col-lg-6 mb-3">
-                                <label for="select-game" class="form-label">Select Game</label>
-                                <select id="select-game" class="form-select" name="select-game" required>
-                                    <option value="" selected>Select Game</option>
-                                    <option value="galaxy-pioneers">Galaxy Pioneers</option>
-                                    <option value="mystic-woods">Mystic Wods</option>
-                                    <option value="captains-gambit">Captain's Gambit</option>
-                                    <option value="critter-quest">Critter Quest</option>
-                                    <option value="settlers-of-catan">Settlers of Catan</option>
-                                    <option value="monopoly">Monopoly</option>
-                                    <option value="exploding-kittens">Exploding Kittens</option>
-                                    <option value="cluedo">Cluedo</option>
-                                </select>
-                            </div>
-                            <div class="col-12 col-lg-6 mb-3">
-                                <label for="date" class="form-label">Requested Date</label>
-                                <input class="form-control" id="date" name="date" type="date" required>
-                            </div>
+                <!-- reserve game form -->
+                <!-- action set on the form to provide users with feedback when the form has been submitted.
+                            We have not learned how to handle form data yet, so the form data is not actually sent anywhere for this project -->
+                <form action="success.html" method="GET">
+                    <div class="row">
+                        <div class="col-12 col-lg-4 mb-3">
+                            <label for="full-name" class="form-label">Full Name</label>
+                            <input class="form-control" id="full-name" name="full-name" type="text" required>
                         </div>
-
+                        <div class="col-12 col-lg-4 mb-3">
+                            <label for="email-address" class="form-label">Email Address</label>
+                            <input class="form-control" id="email-address" name="email-address" type="email" required>
+                        </div>
+                        <div class="col-12 col-lg-4 mb-3">
+                            <label for="phone" class="form-label">Phone number</label>
+                            <input class="form-control" id="phone" name="phone" type="number" required>
+                        </div>
+                        <div class="col-12 col-lg-8 mb-3">
+                            <label for="select-game" class="form-label">Select Game</label>
+                            <select id="select-game" class="form-select" name="select-game" required>
+                                <option value="" selected>Select Game</option>
+                                <option value="galaxy-pioneers">Galaxy Pioneers</option>
+                                <option value="mystic-woods">Mystic Wods</option>
+                                <option value="captains-gambit">Captain's Gambit</option>
+                                <option value="critter-quest">Critter Quest</option>
+                                <option value="settlers-of-catan">Settlers of Catan</option>
+                                <option value="monopoly">Monopoly</option>
+                                <option value="exploding-kittens">Exploding Kittens</option>
+                                <option value="cluedo">Cluedo</option>
+                            </select>
+                        </div>
+                        <div class="col-12 col-lg-4 mb-3">
+                            <label for="date" class="form-label">Requested Date</label>
+                            <input class="form-control" id="date" name="date" type="date" required>
+                        </div>
+                    </div>
+                    <div class="col-12 text-end">
                         <button type="submit" class="btn custom-button-outline">Submit</button>
-                    </form>
-                </div>
+                    </div>
+                    
+                </form>
+            </div>
         </section>
     </main>
 
