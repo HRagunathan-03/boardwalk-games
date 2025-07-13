@@ -16,6 +16,7 @@
 /* Global Styles */
 body {
     font-family: var(--primary-font);
+    padding-top: 57.15px;/* Push body down to sit under the navbar */
 }
 
 h1,
